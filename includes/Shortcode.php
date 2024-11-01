@@ -24,7 +24,10 @@ class Shortcode{
             "auto_rotate" => false,
             "loading" => 'eager',
             "mouse_interaction" => true,
-            "bg_color" => 'transparent'
+            "bg_color" => 'transparent',
+            "height" => '400px',
+            "width" => '100%',
+            "class_name" => null
         ), $atts, 'a3dmv_model_viewer'));
 
         extract($attrs);
@@ -46,6 +49,9 @@ class Shortcode{
         }
 
         $block = $this->generate_advanced_model_viewer_to_block($attrs);
+        // echo '<pre>';
+        // print_r( $block );
+        // echo '</pre>';
 
         return render_block($block);
 

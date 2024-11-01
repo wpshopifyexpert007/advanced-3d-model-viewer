@@ -18,7 +18,15 @@ export default function Edit(props) {
     <div {...useBlockProps()} style={{ textAlign: attributes.alignment }}>
       <Settings {...props} />
       <Style attributes={attributes} />
-      <ModelViewer attributes={attributes} viewer={viewer} setViewer={setViewer} />
+      {!attributes.model.model_url ? (
+        <>
+          <div className="no-model">
+            <h2>Please upload a 3d model</h2>
+          </div>
+        </>
+      ) : (
+        <ModelViewer attributes={attributes} viewer={viewer} setViewer={setViewer} />
+      )}
     </div>
   );
 }

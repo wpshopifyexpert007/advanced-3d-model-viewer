@@ -22,7 +22,7 @@
     "i18n-json": "wp i18n make-json i18n/ --no-purge",
     "i18n-mo": "wp i18n make-mo i18n/",
     "i18n": "npm run i18n-pot && npm run i18n-json && npm run i18n-mo",
-    "bundle": "wp-scripts build && npm run i18n && gulp bundle && gulp plugin_zip"
+    "bundle": "wp-scripts build && npm run i18n && gulp bundle"
   },
   "files": [
     "lib",

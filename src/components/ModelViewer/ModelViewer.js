@@ -4,8 +4,8 @@ import "./style.scss";
 import FullScreen from "../icons/FullScreen";
 import Close from "../icons/Close";
 
-export default function ModelViewer({ attributes, viewer, setViewer }) {
-  const { clientId, model, attrs, options = {} } = attributes;
+export default function ModelViewer({ attributes, setViewer }) {
+  const { clientId, model, attrs } = attributes;
   const [enableOptions, setEnableOptions] = useState("");
 
   const ref = useRef();
@@ -26,12 +26,14 @@ export default function ModelViewer({ attributes, viewer, setViewer }) {
 
   useEffect(() => {
     const attributes = Object.fromEntries(Object.entries(attrs).map(([key, value]) => [key, value ? value : undefined]));
-    console.log(attributes);
+
     if (["eager", "lazy"].includes(attrs.loading)) {
       delete attributes.reveal;
     }
     setEnableOptions(attributes);
   }, [attrs]);
+
+  console.log(model.model_url);
 
   return (
     <>

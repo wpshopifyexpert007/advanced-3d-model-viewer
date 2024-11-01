@@ -1,6 +1,5 @@
 const { useState, Fragment } = wp.element;
 const { Dropdown, ColorPicker, Button } = wp.components;
-const { __ } = wp.i18n;
 
 import "./styles.scss";
 
@@ -17,7 +16,7 @@ import "./styles.scss";
  * return rgba color code
  */
 const BColor = (props) => {
-  const { value, title = "", toolbar = false, defaultColor, onChange, className, disableAlpha, boxPosition = "top left", globalColors = [] } = props;
+  const { value, title = "", toolbar = false, defaultColor, onChange, boxPosition = "top left", globalColors = [] } = props;
   const [state, setState] = useState(value);
   return (
     <div className="BColor">
@@ -50,7 +49,7 @@ const BColor = (props) => {
             </div>
           );
         }}
-        renderContent={({ isOpen, onToggle, onClose }) => (
+        renderContent={({ isOpen, onClose }) => (
           <Fragment>
             <ColorPicker
               color={value || ""}

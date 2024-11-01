@@ -1,14 +1,14 @@
 import { __ } from "@wordpress/i18n";
-const { Panel, PanelBody, PanelRow, FormToggle } = wp.components;
+const { Panel, PanelBody } = wp.components;
 import { produce } from "immer";
 
 import BMediaUpload from "../../../components/BMediaUpload/BMediaUpload";
-import { SelectControl, TextControl, ToggleControl } from "@wordpress/components";
+import { SelectControl, ToggleControl } from "@wordpress/components";
 // import BMediaUpload from "../../components/BMediaUpload/BMediaUpload";
 // import Scenes from "./Scenes";
 
 export function General({ attributes, setAttributes }) {
-  const { options, model, attrs } = attributes;
+  const { model, attrs } = attributes;
 
   const updateModel = (key, value) => {
     const newModel = produce(model, (draft) => {

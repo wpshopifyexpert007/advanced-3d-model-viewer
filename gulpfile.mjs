@@ -40,6 +40,6 @@ export function bundle() {
 
 // export { bundle };
 
-export const plugin_zip = () => {
-  return gulp.src(["bundled/**"]).pipe(zip("advanced-3d-model-viewer.zip")).pipe(gulp.dest("zip"));
-};
+// export const plugin_zip = () => {
+//   return gulp.src(["bundled/**"]).pipe(zip("advanced-3d-model-viewer.zip")).pipe(gulp.dest("zip"));
+// };

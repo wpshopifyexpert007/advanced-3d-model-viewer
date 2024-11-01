@@ -4,25 +4,8 @@ namespace A3DMV;
 
 class EnableMimeType {
     private $mime_types = [
-        '3dm'   => 'application/vnd.3dm',
-        '3ds'   => 'application/x-3ds',
-        '3mf'   => 'application/vnd.ms-3mf',
-        'amf'   => 'application/x-amf',
-        'bim'   => 'application/vnd.autodesk.bim',
-        'brep'  => 'application/x-brep',
-        'dae'   => 'application/vnd.collada+xml',
-        'fbx'   => 'application/x-fbx',
-        'fcstd' => 'application/x-freecad',
         'gltf'  => 'model/gltf+json',
-        'glb'  => 'model/gltf+binary',
-        'ifc'   => 'application/x-ifc',
-        'iges'  => 'application/iges',
-        'step'  => 'application/step',
-        'stl'   => 'application/vnd.ms-pki.stl',
-        'obj'   => 'application/x-wavefront-obj',
-        'off'   => 'application/x-off',
-        'ply'   => 'application/x-ply',
-        'wrl'   => 'model/vrml'
+        'glb'  => 'model/gltf+binary'
     ];
 
     public function enable() {
