@@ -1,0 +1,42 @@
+.a3dmv-model-viewer {
+  display: inline-block;
+  model-viewer {
+    width: 100%;
+    height: 100%;
+  }
+  .fullscreen-icon {
+    svg {
+      cursor: pointer;
+    }
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    .close {
+      display: none;
+    }
+    .open, .close {
+      background: #fff;
+      padding: 2px;
+      border-radius: 3px;
+      display: none;
+    }
+  }
+  model-viewer:hover {
+    .fullscreen-icon {
+      .open {
+        display: inline-block;
+      }
+    }
+  }
+  model-viewer:fullscreen {
+    .fullscreen-icon {
+      .open {
+        display: none;
+      }
+      .close {
+        display: inline-block;
+      }
+
+    }
+  }
+}

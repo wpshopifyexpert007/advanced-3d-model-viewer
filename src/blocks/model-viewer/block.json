@@ -1,0 +1,67 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "a3dmv/model-viewer",
+    "version": "1.0.0",
+    "title": "Advanced 3D Model Viewer",
+    "category": "media",
+    "icon": "format-image",
+    "description": "Display a 3D Model In Your Website.",
+    "supports": {
+        "html": false,
+        "align": ["wide", "full"]
+    },
+    "textdomain": "advanced-3d-model-viewer",
+    "attributes": {
+        "clientId": { "type": "string", "default": "uniqueId" },
+        "align": { "type": "string",  "default": ""},
+        "alignment": { "type": "string",  "default": "left"},
+        "model": {
+            "type": "object",
+            "default": {
+                "model_url": "",
+                "poster_url": "",
+                "alt": ""
+            }
+        },
+        "options": {
+            "type": "object",
+            "default": {
+                
+            }
+        },
+        "attrs": {
+            "type": "object",
+            "default": {
+                "camera-controls": true,
+                "loading": "auto",
+                "auto-rotate": false
+            }
+        },
+        "style": {
+            "type": "object",
+            "default": {
+                "height": "400px",
+                "width": "100%",
+                "bgColor": "transparent"
+            }
+        },
+        "css": {
+            "type": "string",
+            "default": ""
+        },
+        "additional": {
+            "type": "object",
+            "default": {
+                "Class": "",
+                "ID": "",
+                "CSS": ""
+            }
+        }
+    },
+    "editorScript": ["file:./index.js", "model-viewer-4.0.0"],
+    "editorStyle": ["file:./index.css"],
+    "style": ["file:./view.css", "model-viewer-4.0.0"],
+    "viewScript": ["file:./view.js", "model-viewer-4.0.0"],
+    "render": "file:./render.php"
+}

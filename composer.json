@@ -1,0 +1,20 @@
+{
+    "name": "wp-shopify-expert/advanced-3d-model-viewer",
+    "description": "A powerful 3D model viewer with Gutenberg block and Elementor addon support",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "WP Shopify Expert",
+            "email": "wordpress@wpshopifyexpert.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "A3DMV\\": "includes/"
+        }
+    }
+}
