@@ -20,7 +20,7 @@ class Shortcode{
             "model_url"  => null,
             "poster_url"  => null,
             "alignment"  => "left",
-            "align" => "left",
+            "align" => null,
             "auto_rotate" => false,
             "loading" => 'eager',
             "mouse_interaction" => true,
@@ -49,9 +49,6 @@ class Shortcode{
         }
 
         $block = $this->generate_advanced_model_viewer_to_block($attrs);
-        // echo '<pre>';
-        // print_r( $block );
-        // echo '</pre>';
 
         return render_block($block);
 

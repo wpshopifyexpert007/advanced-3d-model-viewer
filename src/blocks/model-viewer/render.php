@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 extract($attributes );
 
 $className = $className ?? '';
-$blockClassName = 'wp-block-a3dmv ' . $className 
+$blockClassName = 'wp-block-a3dmv ' . $className . "align".$align;
 
 ?>
 
