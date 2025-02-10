@@ -3,7 +3,7 @@ Contributors: wpshopifyexpert
 Tags: 3D Viewer, 3D Model Display, Interactive Models, WooCommerce 3D, GLTF Viewer
 Donate Link: https://buymeacoffee.com/shehabulislam
 Requires at least: 5.8
-Tested up to: 6.6.2
+Tested up to: 6.7
 Stable tag: 1.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
@@ -13,7 +13,14 @@ Embed and interact with 3D models in your WordPress content using a block, short
 
 == Description ==
 
-Advanced 3D Model Viewer allowing you to easily embed and interact with 3D models in your posts, pages, and custom content. Whether you're an architect showcasing building designs, a product designer displaying prototypes, an educator creating interactive learning materials, or a 3D artist sharing your work, this plugin provides a seamless way to bring your 3D content to life on the web.
+Advanced 3D Model Viewer allowing you to easily embed and interact with 3D models in your posts, pages, and custom content. Whether you're an architect showcasing building designs, a product designer displaying prototypes, an educator creating interactive learning materials, or a 3D artist sharing your work, this plugin provides a seamless way to bring your 3D model to life on the web.
+
+### Work as 
+* gltf viewer
+* glb viewer
+
+
+**[Live Demo](https://wpshopifyexpert.com/advanced-3d-model-viewer-demo/ "Demo")** 
 
 Features:
 
@@ -72,8 +79,9 @@ Example with all attributes:
 
 == Screenshots ==
 
-1. model viewer
-2. Gutenberg block settings
+1. Enable Mouse Interaction and Auto loading
+2. Auto Rotate 
+3. Settings
 
 == Changelog ==
 
