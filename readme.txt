@@ -113,7 +113,7 @@ To comply with WordPress.org guidelines and ensure transparency, we provide acce
 
 The uncompressed JavaScript source files are available in the `src` folder of our plugin repository. You can find these files at:
 
-[https://github.com/shehabulislam/advanced-3d-model-viewer/tree/main/src](https://github.com/shehabulislam/advanced-3d-model-viewer/tree/main/src)
+[Github](https://github.com/wpshopifyexpert007/advanced-3d-model-viewer/tree/main/src)
 
 Included in the src folder as well.
 
@@ -125,4 +125,4 @@ For support inquiries, please visit our [support forum](https://wpshopifyexpert.
 
 = Contribute =
 
-If you'd like to contribute to the development of this plugin, visit our [GitHub repository](https://github.com/shehabulislam/advanced-3d-model-viewer).
+If you'd like to contribute to the development of this plugin, visit our [GitHub repository](https://github.com/wpshopifyexpert007/advanced-3d-model-viewer).
